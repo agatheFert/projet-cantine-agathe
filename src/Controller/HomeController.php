@@ -13,7 +13,7 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("/", name="home")
+     * @Route("/", name="app_home", methods={"GET"})
      * @return Response
      *
      */
@@ -24,6 +24,14 @@ class HomeController extends AbstractController
     }
 
 
+    /**
+     * @Route("/contact")
+     * @return Response
+     */
+    public function contact(): Response
+    {
+        return $this->render('contact.html.twig');
+    }
 
 
 
