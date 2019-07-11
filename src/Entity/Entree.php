@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,6 +32,22 @@ class Entree
      * @ORM\Column(type="string", length=255)
      */
     private $image;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Menu", inversedBy="entrees")
+     */
+    private $menu;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\MenuSelectionne", mappedBy="entree")
+     */
+    private $menuSelectionnes;
+
+    public function __construct()
+    {
+        $this->menu = new ArrayCollection();
+        $this->menuSelectionnes = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -68,6 +86,63 @@ class Entree
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Menu[]
+     */
+    public function getMenu(): Collection
+    {
+        return $this->menu;
+    }
+
+    public function addMenu(Menu $menu): self
+    {
+        if (!$this->menu->contains($menu)) {
+            $this->menu[] = $menu;
+        }
+
+        return $this;
+    }
+
+    public function removeMenu(Menu $menu): self
+    {
+        if ($this->menu->contains($menu)) {
+            $this->menu->removeElement($menu);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|MenuSelectionne[]
+     */
+    public function getMenuSelectionnes(): Collection
+    {
+        return $this->menuSelectionnes;
+    }
+
+    public function addMenuSelectionne(MenuSelectionne $menuSelectionne): self
+    {
+        if (!$this->menuSelectionnes->contains($menuSelectionne)) {
+            $this->menuSelectionnes[] = $menuSelectionne;
+            $menuSelectionne->setEntree($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMenuSelectionne(MenuSelectionne $menuSelectionne): self
+    {
+        if ($this->menuSelectionnes->contains($menuSelectionne)) {
+            $this->menuSelectionnes->removeElement($menuSelectionne);
+            // set the owning side to null (unless already changed)
+            if ($menuSelectionne->getEntree() === $this) {
+                $menuSelectionne->setEntree(null);
+            }
+        }
 
         return $this;
     }

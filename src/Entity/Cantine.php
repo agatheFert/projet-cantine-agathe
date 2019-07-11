@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -45,6 +47,33 @@ class Cantine
      * @ORM\Column(type="string", length=255)
      */
     private $gerant;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $relation;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Menu", inversedBy="cantines")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $menu;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Menu", mappedBy="cantine")
+     */
+    private $menus;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="cantine")
+     */
+    private $users;
+
+    public function __construct()
+    {
+        $this->menus = new ArrayCollection();
+        $this->users = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -122,4 +151,65 @@ class Cantine
 
         return $this;
     }
+
+    /**
+     * @return Collection|Menu[]
+     */
+    public function getMenus(): Collection
+    {
+        return $this->menus;
+    }
+
+    public function addMenu(Menu $menu): self
+    {
+        if (!$this->menus->contains($menu)) {
+            $this->menus[] = $menu;
+            $menu->setCantine($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMenu(Menu $menu): self
+    {
+        if ($this->menus->contains($menu)) {
+            $this->menus->removeElement($menu);
+            // set the owning side to null (unless already changed)
+            if ($menu->getCantine() === $this) {
+                $menu->setCantine(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|User[]
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): self
+    {
+        if (!$this->users->contains($user)) {
+            $this->users[] = $user;
+            $user->addCantine($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): self
+    {
+        if ($this->users->contains($user)) {
+            $this->users->removeElement($user);
+            $user->removeCantine($this);
+        }
+
+        return $this;
+    }
+
+
 }
