@@ -28,10 +28,7 @@ class Menu
      */
     private $date;
 
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Cantine", mappedBy="menu")
-     */
-    private $cantines;
+
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Cantine", inversedBy="menus")
@@ -63,6 +60,12 @@ class Menu
      * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="menu")
      */
     private $users;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Cantine", inversedBy="menusCree")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $menuOfCantine;
 
     public function __construct()
     {
@@ -103,36 +106,11 @@ class Menu
         return $this;
     }
 
-    /**
-     * @return Collection|Cantine[]
-     */
-    public function getCantines(): Collection
-    {
-        return $this->cantines;
-    }
 
-    public function addCantine(Cantine $cantine): self
-    {
-        if (!$this->cantines->contains($cantine)) {
-            $this->cantines[] = $cantine;
-            $cantine->setMenu($this);
-        }
 
-        return $this;
-    }
 
-    public function removeCantine(Cantine $cantine): self
-    {
-        if ($this->cantines->contains($cantine)) {
-            $this->cantines->removeElement($cantine);
-            // set the owning side to null (unless already changed)
-            if ($cantine->getMenu() === $this) {
-                $cantine->setMenu(null);
-            }
-        }
 
-        return $this;
-    }
+
 
     public function getCantine(): ?Cantine
     {
@@ -282,6 +260,18 @@ class Menu
             $this->users->removeElement($user);
             $user->removeMenu($this);
         }
+
+        return $this;
+    }
+
+    public function getMenuOfCantine(): ?Cantine
+    {
+        return $this->menuOfCantine;
+    }
+
+    public function setMenuOfCantine(?Cantine $menuOfCantine): self
+    {
+        $this->menuOfCantine = $menuOfCantine;
 
         return $this;
     }

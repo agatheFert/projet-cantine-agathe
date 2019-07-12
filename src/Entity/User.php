@@ -10,6 +10,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @ORM\Table(name="app_user")
  * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
  */
 class User implements UserInterface
@@ -219,4 +220,22 @@ class User implements UserInterface
 
         return $this;
     }
+
+    /**
+     * On définie cette méthode pour afficher
+     * le mail des Users  dans la liste déroulante
+     * du formulaire Cantine de EasyAdmin
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->email;
+    }
+
+
+
+
+
+
+
 }

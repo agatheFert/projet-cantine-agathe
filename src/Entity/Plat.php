@@ -146,4 +146,20 @@ class Plat
 
         return $this;
     }
+
+    /**
+     * On définie cette méthode pour afficher
+     * le mail des Users  dans la liste déroulante
+     * du formulaire Cantine de EasyAdmin
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->name;
+    }
+
+
+
+
+
 }

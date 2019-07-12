@@ -48,16 +48,7 @@ class Cantine
      */
     private $gerant;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $relation;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Menu", inversedBy="cantines")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $menu;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Menu", mappedBy="cantine")
@@ -69,11 +60,32 @@ class Cantine
      */
     private $users;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Menu", mappedBy="menuOfCantine")
+     */
+    private $menusCree;
+
     public function __construct()
     {
         $this->menus = new ArrayCollection();
         $this->users = new ArrayCollection();
+        $this->menusCree = new ArrayCollection();
     }
+
+    /**
+     * @return ArrayCollection
+     * Convertir Users en string
+     */
+    public function __toString()
+
+    {
+
+
+        return $this->name;
+    }
+
+
+
 
     public function getId(): ?int
     {
@@ -210,6 +222,42 @@ class Cantine
 
         return $this;
     }
+
+    /**
+     * @return Collection|Menu[]
+     */
+    public function getMenusCree(): Collection
+    {
+        return $this->menusCree;
+    }
+
+    public function addMenusCree(Menu $menusCree): self
+    {
+        if (!$this->menusCree->contains($menusCree)) {
+            $this->menusCree[] = $menusCree;
+            $menusCree->setMenuOfCantine($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMenusCree(Menu $menusCree): self
+    {
+        if ($this->menusCree->contains($menusCree)) {
+            $this->menusCree->removeElement($menusCree);
+            // set the owning side to null (unless already changed)
+            if ($menusCree->getMenuOfCantine() === $this) {
+                $menusCree->setMenuOfCantine(null);
+            }
+        }
+
+        return $this;
+    }
+
+
+
+
+
 
 
 }

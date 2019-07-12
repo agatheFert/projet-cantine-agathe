@@ -1,0 +1,20 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        - App\Entity\Cantine
+        - App\Entity\User
+        - App\Entity\Entree
+        - App\Entity\Plat
+        - App\Entity\Accompagnement
+        - App\Entity\Dessert
+        - App\Entity\Menu
+        - App\Entity\MenuSelectionne
+
+
+
+    design:
+        assets:
+            favicon: '/img/backend/appli/four-couteau.png'
+
+
+    site_name: '<img style="float:right" src="/img/backend/appli/four-couteau.png" /><p>Bienvenue sur le Gestionnaire de</p><b>Cantine 0 Gaspi</b>'
