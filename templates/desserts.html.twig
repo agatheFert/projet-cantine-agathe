@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <main class="container">
+        <h1 class="mt-2">Liste des Desserts</h1>
+        <section class="row">
+            {% for dessert in desserts %}
+                <div class="col-4">
+                    <div class="card">
+                        <img src="/img/desserts/{{ dessert.image }}" class="card-img-top"
+                             alt="Image de {{ dessert.name }}">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ dessert.name }}</h2>
+                            <p class="card-text">{{ dessert.description }}</p>
+                            <a href="#" class="card-link btn btn-outline-info">Détail</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+
+
+
+
+
+
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+

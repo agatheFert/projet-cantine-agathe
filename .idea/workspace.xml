@@ -2,36 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec5d669-9331-4787-897b-dee1175b3777" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/accompagnements/feuillete-legumes.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/accompagnements/frites.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/accompagnements/pates-tomates.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/accompagnements/puree-pommes-terre.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/backend/appli/four-couteau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/entrees/feuillete-chevre.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/entrees/pate.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/entrees/quiche-lorraine.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/entrees/veloute-potiron.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AccompagnementController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/EntreeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accompagnements.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/entrees.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cantine-sf4-agathe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cantine-sf4-agathe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/desserts/ananas.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/desserts/creme-brulee.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/desserts/fromage-blanc-framboise.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/desserts/tarte-amadine.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/desserts/tarte-pommes.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/DessertController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/desserts.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Cantine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cantine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Accompagnement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Accompagnement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Dessert.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Dessert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Entree.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Entree.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Plat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Plat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190710135633.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190711131527.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190712131548.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/plats.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/plats.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,26 +28,14 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Plat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+            <state relative-caret-position="205">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
                 <element signature="e#30#78#0#PHP" expanded="true" />
               </folding>
@@ -71,82 +46,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="232">
+              <caret line="67" column="26" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="261">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/DessertController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#36#56#0#PHP" expanded="true" />
+                <element signature="e#36#59#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/plats.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/desserts.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="22" />
+            <state relative-caret-position="406">
+              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6844">
+              <caret line="240" selection-start-line="240" selection-end-line="240" />
               <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#30#78#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/EntreeController.php">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#34#56#0#PHP" expanded="true" />
-                <element signature="e#659#678#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/entrees.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AccompagnementController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="28" />
-              <folding>
-                <element signature="e#36#66#0#PHP" expanded="true" />
-                <element signature="e#600#627#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/accompagnements.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="4350">
+              <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,17 +115,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+            <state relative-caret-position="1421">
+              <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
               <folding>
-                <element signature="e#1283#1291#0#Twig" expanded="true" />
                 <element signature="e#2004#2026#0#Twig" expanded="true" />
-                <element signature="e#2004#2022#0#Twig" expanded="true" />
                 <element signature="e#2228#2266#0#Twig" expanded="true" />
-                <element signature="e#2777#2789#0#Twig" expanded="true" />
-                <element signature="e#2927#2936#0#Twig" expanded="true" />
-                <element signature="e#3060#3070#0#Twig" expanded="true" />
+                <element signature="e#2367#2391#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4234">
+              <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="151" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -185,6 +151,10 @@
       <find>User</find>
       <find>String</find>
       <find>__toString</find>
+      <find>toStr</find>
+      <find>toS</find>
+      <find>name</find>
+      <find>toString</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,7 +169,6 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/templates/contact.html.twig" />
-        <option value="$PROJECT_DIR$/.env.local" />
         <option value="$PROJECT_DIR$/src/Controller/PlatController.php" />
         <option value="$PROJECT_DIR$/src/Repository/CantineRepository.php" />
         <option value="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" />
@@ -208,17 +177,23 @@
         <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/config/routes/easy_admin.yaml" />
-        <option value="$PROJECT_DIR$/config/packages/easy_admin.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Entity/Plat.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Menu.php" />
         <option value="$PROJECT_DIR$/src/Controller/EntreeController.php" />
         <option value="$PROJECT_DIR$/templates/entrees.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AccompagnementController.php" />
         <option value="$PROJECT_DIR$/templates/plats.html.twig" />
         <option value="$PROJECT_DIR$/templates/accompagnements.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Cantine.php" />
+        <option value="$PROJECT_DIR$/.env.local" />
+        <option value="$PROJECT_DIR$/src/Controller/DessertController.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/desserts.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Entree.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Accompagnement.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Dessert.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/config/packages/easy_admin.yaml" />
       </list>
     </option>
   </component>
@@ -313,10 +288,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
-    <option name="y" value="32" />
-    <option name="width" value="960" />
-    <option name="height" value="882" />
+    <option name="x" value="1920" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -329,102 +303,193 @@
         <subPane>
           <expand>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="accompagnements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="appli" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="desserts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
               <item name="entrees" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="translations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cantine-sf4-agathe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cantine-sf4-agathe" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="ChoiceList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="easycorp" type="462c0819:PsiDirectoryNode" />
+              <item name="easyadmin-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,7 +501,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/accompagnements" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/desserts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -444,10 +509,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\symfony4-cant-af\public\img\desserts" />
+      <recent name="C:\wamp64\www\symfony4-cant-af" />
       <recent name="C:\Users\stagiaire\Documents\cantine-sf4-agathe\public\img\accompagnements" />
       <recent name="C:\Users\stagiaire\Documents\cantine-sf4-agathe\public\img\entrees" />
       <recent name="C:\Users\stagiaire\Documents\cantine-sf4-agathe\public\img\backend\appli" />
-      <recent name="C:\Users\stagiaire\Documents\cantine-sf4-agathe\public\img\plats" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -476,11 +542,14 @@
       <workItem from="1562742203891" duration="11583000" />
       <workItem from="1562831569454" duration="19065000" />
       <workItem from="1562915942054" duration="18427000" />
+      <workItem from="1563353728657" duration="9000" />
+      <workItem from="1563353779771" duration="10180000" />
+      <workItem from="1563698650445" duration="10570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65502000" />
+    <option name="totallyTimeSpent" value="86261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,10 +561,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22249389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -508,7 +577,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6435986" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.9619261" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -516,7 +585,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22249389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -529,7 +598,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.16262975" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2530795" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -548,9 +617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bin/phpcs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bin/phpcs" />
     <entry file="file://$PROJECT_DIR$/bin/console">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -581,17 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/src/Environment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4998">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
-          <folding>
-            <element signature="e#7#200#0#PHP" expanded="true" />
-            <element signature="e#219#249#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/src/Environment.php" />
     <entry file="file://$PROJECT_DIR$/templates/contact.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -599,27 +656,6 @@
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.local">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -735,122 +771,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="232" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Plat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
+        <state relative-caret-position="4408">
           <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/EntreeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="493">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#34#56#0#PHP" expanded="true" />
-            <element signature="e#659#678#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/entrees.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="696">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/plats.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="22" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AccompagnementController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="928">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#36#66#0#PHP" expanded="true" />
-            <element signature="e#600#627#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/accompagnements.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="609">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190717152410.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1150">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/plats.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="17" column="7" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#36#56#0#PHP" expanded="true" />
+            <element signature="e#691#708#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DessertController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/desserts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6844">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4350">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="1421">
+          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
           <folding>
-            <element signature="e#1283#1291#0#Twig" expanded="true" />
             <element signature="e#2004#2026#0#Twig" expanded="true" />
-            <element signature="e#2004#2022#0#Twig" expanded="true" />
             <element signature="e#2228#2266#0#Twig" expanded="true" />
-            <element signature="e#2777#2789#0#Twig" expanded="true" />
-            <element signature="e#2927#2936#0#Twig" expanded="true" />
-            <element signature="e#3060#3070#0#Twig" expanded="true" />
+            <element signature="e#2367#2391#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4234">
+          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="151" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="261">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
         </state>
       </provider>
     </entry>
