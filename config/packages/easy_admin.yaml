@@ -15,6 +15,7 @@ easy_admin:
                     - description
                     - { property: 'image', type: 'image', base_path: '/img/entrees/'}
                     - menu
+                    - {property: 'Tarif', label: 'Tarif (€)'}
 
         Plat:
             class: App\Entity\Plat
@@ -24,6 +25,7 @@ easy_admin:
                     - description
                     - { property: 'image', type: 'image', base_path: '/img/plats/'}
                     - menu
+                    - {property: 'Tarif', label: 'Tarif (€)'}
 
         Accompagnement:
             class: App\Entity\Accompagnement
@@ -33,6 +35,7 @@ easy_admin:
                     - description
                     - { property: 'image', type: 'image', base_path: '/img/accompagnements/'}
                     - menu
+                    - {property: 'Tarif', label: 'Tarif (€)'}
 
         Dessert:
             class: App\Entity\Dessert
@@ -42,6 +45,7 @@ easy_admin:
                     - description
                     - { property: 'image', type: 'image', base_path: '/img/desserts/'}
                     - menu
+                    - {property: 'Tarif', label: 'Tarif (€)'}
 
         Menu:
             class: App\Entity\Menu

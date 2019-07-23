@@ -43,6 +43,11 @@ class Dessert
      */
     private $menuSelectionnes;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $tarif;
+
     public function __construct()
     {
         $this->menu = new ArrayCollection();
@@ -149,6 +154,18 @@ class Dessert
     public function __toString(): string
     {
         return $this->name;
+    }
+
+    public function getTarif(): ?float
+    {
+        return $this->tarif;
+    }
+
+    public function setTarif(float $tarif): self
+    {
+        $this->tarif = $tarif;
+
+        return $this;
     }
 
 
