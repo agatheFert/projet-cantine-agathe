@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -22,12 +23,6 @@ class Menu
      * @ORM\Column(type="string", length=255)
      */
     private $name;
-
-    /**
-     * @ORM\Column(type="date")
-     */
-    private $date;
-
 
 
     /**
@@ -67,6 +62,11 @@ class Menu
      */
     private $menuOfCantine;
 
+    /**
+     * @ORM\Column(type="date", nullable=false)
+     */
+    private $date;
+
     public function __construct()
     {
         $this->cantines = new ArrayCollection();
@@ -75,6 +75,7 @@ class Menu
         $this->accompagnements = new ArrayCollection();
         $this->desserts = new ArrayCollection();
         $this->users = new ArrayCollection();
+
     }
 
     public function getId(): ?int
@@ -87,30 +88,16 @@ class Menu
         return $this->name;
     }
 
+    /**
+     * @param string $name
+     * @return Menu
+     */
     public function setName(string $name): self
     {
-        $this->name = $name;
+        $this->name = $this->nameDateCantine(); ;
 
         return $this;
     }
-
-    public function getDate(): ?\DateTimeInterface
-    {
-        return $this->date;
-    }
-
-    public function setDate(\DateTimeInterface $date): self
-    {
-        $this->date = $date;
-
-        return $this;
-    }
-
-
-
-
-
-
 
     public function getCantine(): ?Cantine
     {
@@ -278,6 +265,22 @@ class Menu
     public function __toString(): string
     {
         return $this->name;
+    }
+
+    public function getDate(): ?\DateTimeInterface
+    {
+        return $this->date;
+    }
+
+    public function setDate(\DateTimeInterface $date): self
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    public function nameDateCantine() {
+        return 'Menu du de la Cantine' ;
     }
 
 
