@@ -89,11 +89,7 @@ class Menu
      */
     public function setName(string $name): self
     {
-        // $this->name = $this->nameDateCantine();
-
         $this->name = $this->nameDateCantine();
-        //dump($this->cantine);
-        //die;
         return $this;
     }
 
@@ -275,10 +271,7 @@ class Menu
      *  @ORM\PrePersist
      */
     public function nameDateCantine() {
-        //$toto = $this->cantine->getName();
-        //return 'Menu Cantine' .$toto ;
-        // $this->name = 'Menu du ' . $this->date->format('Y'). ' de la Cantine ' . $this->cantine->getName();
-        $this->name = 'Menu du ' . $this->date->format('Y'). 'de la Cantine ' . $this->cantine->getName();
+        $this->name = 'Menu du ' . $this->date->format('d F Y'). ' de la Cantine : ' . $this->cantine->getName();
     }
 
 

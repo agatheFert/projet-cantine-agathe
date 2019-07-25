@@ -51,7 +51,6 @@ easy_admin:
             class: App\Entity\Menu
             form:
                 fields:
-                    - name
                     - date
                     - cantine
                     - { property: 'entrees', type_options: { multiple: true, by_reference: false }}
