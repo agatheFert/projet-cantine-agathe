@@ -4,40 +4,41 @@
 namespace App\Controller;
 
 
-use App\Entity\Plat;
+use App\Entity\Cantine;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class PlatController extends AbstractController
+class CantineController extends AbstractController
 {
 
+
     /**
-     * @Route("list-plats")
+     * @Route("list-cantines")
      * @return Response
      */
 
-
-    public function listPlats():Response
+    public function listCantines():Response
     {
 
 
         // Récupération du Repository
         $repository = $this->getDoctrine()
-                            ->getRepository(Plat::class)
+            ->getRepository(Cantine::class)
         ;
-        // Récupération de tous les Plats
-        $plats = $repository->findAll();
+        // Récupération de toutes les Cantines
+        $cantines = $repository->findAll();
         // Renvoi des articles à la vue
-        return $this->render('plats.html.twig', [
-            'plats'=>$plats
+        return $this->render('cantines.html.twig', [
+            'cantines'=>$cantines
         ]);
-
 
 
     }
 
+
+
+
+
+
 }
-
-
-

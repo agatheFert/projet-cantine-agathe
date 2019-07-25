@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\MenuRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Menu
 {
@@ -57,12 +58,6 @@ class Menu
     private $users;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Cantine", inversedBy="menusCree")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $menuOfCantine;
-
-    /**
      * @ORM\Column(type="date", nullable=false)
      */
     private $date;
@@ -94,13 +89,18 @@ class Menu
      */
     public function setName(string $name): self
     {
-        $this->name = $this->nameDateCantine(); ;
+        // $this->name = $this->nameDateCantine();
 
+        $this->name = $this->nameDateCantine();
+        //dump($this->cantine);
+        //die;
         return $this;
     }
 
     public function getCantine(): ?Cantine
     {
+        //dump($this->cantine);
+        //die;-
         return $this->cantine;
     }
 
@@ -251,20 +251,12 @@ class Menu
         return $this;
     }
 
-    public function getMenuOfCantine(): ?Cantine
-    {
-        return $this->menuOfCantine;
-    }
 
-    public function setMenuOfCantine(?Cantine $menuOfCantine): self
-    {
-        $this->menuOfCantine = $menuOfCantine;
-
-        return $this;
-    }
     public function __toString(): string
     {
+        $this->cantine;
         return $this->name;
+
     }
 
     public function getDate(): ?\DateTimeInterface
@@ -279,8 +271,14 @@ class Menu
         return $this;
     }
 
+    /**
+     *  @ORM\PrePersist
+     */
     public function nameDateCantine() {
-        return 'Menu du de la Cantine' ;
+        //$toto = $this->cantine->getName();
+        //return 'Menu Cantine' .$toto ;
+        // $this->name = 'Menu du ' . $this->date->format('Y'). ' de la Cantine ' . $this->cantine->getName();
+        $this->name = 'Menu du ' . $this->date->format('Y'). 'de la Cantine ' . $this->cantine->getName();
     }
 
 

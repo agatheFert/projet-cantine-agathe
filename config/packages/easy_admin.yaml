@@ -59,7 +59,6 @@ easy_admin:
                     - { property: 'accompagnements', type_options: { multiple: true, by_reference: false }}
                     - { property: 'desserts', type_options: { multiple: true, by_reference: false }}
                     - users
-                    - menuOfCantine
 
 
         MenuSelectionne:

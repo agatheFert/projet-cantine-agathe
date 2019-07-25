@@ -62,10 +62,7 @@ class Cantine
      */
     private $users;
 
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Menu", mappedBy="menuOfCantine")
-     */
-    private $menusCree;
+
 
     public function __construct()
     {
@@ -225,36 +222,7 @@ class Cantine
         return $this;
     }
 
-    /**
-     * @return Collection|Menu[]
-     */
-    public function getMenusCree(): Collection
-    {
-        return $this->menusCree;
-    }
 
-    public function addMenusCree(Menu $menusCree): self
-    {
-        if (!$this->menusCree->contains($menusCree)) {
-            $this->menusCree[] = $menusCree;
-            $menusCree->setMenuOfCantine($this);
-        }
-
-        return $this;
-    }
-
-    public function removeMenusCree(Menu $menusCree): self
-    {
-        if ($this->menusCree->contains($menusCree)) {
-            $this->menusCree->removeElement($menusCree);
-            // set the owning side to null (unless already changed)
-            if ($menusCree->getMenuOfCantine() === $this) {
-                $menusCree->setMenuOfCantine(null);
-            }
-        }
-
-        return $this;
-    }
 
 
 

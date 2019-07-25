@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec5d669-9331-4787-897b-dee1175b3777" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CantineController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cantines.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PlatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Cantine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cantine.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190723133027.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/entrees.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/entrees.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="348">
+              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="29" />
               <folding>
                 <element signature="e#30#78#0#PHP" expanded="true" />
               </folding>
@@ -32,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Entity/Menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="282" column="40" lean-forward="true" selection-start-line="282" selection-start-column="40" selection-end-line="282" selection-end-column="40" />
+            <state relative-caret-position="293">
+              <caret line="275" column="7" selection-start-line="275" selection-start-column="7" selection-end-line="275" selection-end-column="7" />
               <folding>
                 <element signature="e#30#43#0#PHP" expanded="true" />
               </folding>
@@ -42,37 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1595">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Plat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/DessertController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="114">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
                 <element signature="e#36#59#0#PHP" expanded="true" />
               </folding>
@@ -81,10 +60,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/CantineController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="128">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding>
+                <element signature="e#36#59#0#PHP" expanded="true" />
+                <element signature="e#575#595#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cantines.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/entrees.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="22" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -92,9 +96,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1421">
-              <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+            <state relative-caret-position="206">
+              <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
               <folding>
+                <element signature="e#1554#1578#0#Twig" expanded="true" />
                 <element signature="e#2004#2026#0#Twig" expanded="true" />
                 <element signature="e#2228#2266#0#Twig" expanded="true" />
                 <element signature="e#2367#2391#0#Twig" expanded="true" />
@@ -104,22 +109,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="367">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
               <folding>
-                <element signature="e#30#78#0#PHP" expanded="true" />
+                <element signature="e#36#56#0#PHP" expanded="true" />
+                <element signature="e#691#708#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/EntreeRepository.php">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="271">
+              <caret line="154" column="30" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="153" column="30" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="30" />
+              <folding>
+                <element signature="e#30#78#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,13 +157,15 @@
       <find>onAuthenticationSuccess(</find>
       <find>User</find>
       <find>String</find>
-      <find>__toString</find>
       <find>toStr</find>
       <find>toS</find>
       <find>name</find>
       <find>toString</find>
       <find>tarif</find>
       <find>date</find>
+      <find>nameDateCantine</find>
+      <find>hasMenuOfCantine</find>
+      <find>__toString</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +180,6 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/templates/contact.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/PlatController.php" />
         <option value="$PROJECT_DIR$/src/Repository/CantineRepository.php" />
         <option value="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
@@ -171,19 +190,22 @@
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Entity/Plat.php" />
         <option value="$PROJECT_DIR$/src/Controller/EntreeController.php" />
-        <option value="$PROJECT_DIR$/templates/entrees.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AccompagnementController.php" />
         <option value="$PROJECT_DIR$/templates/plats.html.twig" />
         <option value="$PROJECT_DIR$/templates/accompagnements.html.twig" />
         <option value="$PROJECT_DIR$/.env.local" />
         <option value="$PROJECT_DIR$/src/Controller/DessertController.php" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/desserts.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Accompagnement.php" />
         <option value="$PROJECT_DIR$/src/Entity/Dessert.php" />
         <option value="$PROJECT_DIR$/src/Entity/Entree.php" />
-        <option value="$PROJECT_DIR$/config/packages/easy_admin.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Cantine.php" />
+        <option value="$PROJECT_DIR$/config/packages/easy_admin.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/PlatController.php" />
+        <option value="$PROJECT_DIR$/templates/entrees.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/CantineController.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/cantines.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Menu.php" />
       </list>
     </option>
@@ -279,8 +301,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="107" />
-    <option name="y" value="12" />
+    <option name="x" value="1913" />
+    <option name="y" value="11" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -394,6 +416,12 @@
               <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony4-cant-af" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symfony4-cant-af" type="b2602c69:ProjectViewProjectNode" />
@@ -543,12 +571,12 @@
       <workItem from="1563353728657" duration="9000" />
       <workItem from="1563353779771" duration="10180000" />
       <workItem from="1563698650445" duration="30173000" />
-      <workItem from="1563900736331" duration="7105000" />
+      <workItem from="1563900736331" duration="23098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112969000" />
+    <option name="totallyTimeSpent" value="128962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,10 +588,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="107" y="12" width="1696" height="1026" extended-state="0" />
+    <frame x="1913" y="11" width="1696" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22493887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25733498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -576,34 +604,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.8331467" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.774916" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22249389" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.9664054" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -669,13 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/MenuSelectionne.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -780,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/entrees.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AccompagnementController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
@@ -826,17 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="17" column="7" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="e#36#56#0#PHP" expanded="true" />
-            <element signature="e#691#708#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/desserts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -854,76 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1595">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Plat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DessertController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#36#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
-          <folding>
-            <element signature="e#2004#2026#0#Twig" expanded="true" />
-            <element signature="e#2228#2266#0#Twig" expanded="true" />
-            <element signature="e#2367#2391#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/EntreeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -931,10 +843,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/easy_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1769">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Plat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="160" column="30" selection-start-line="160" selection-start-column="20" selection-end-line="160" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/MenuSelectionne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Entree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Dessert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="153" column="30" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="30" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Accompagnement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DessertController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PlatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#36#56#0#PHP" expanded="true" />
+            <element signature="e#691#708#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/entrees.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+          <folding>
+            <element signature="e#1554#1578#0#Twig" expanded="true" />
+            <element signature="e#2004#2026#0#Twig" expanded="true" />
+            <element signature="e#2228#2266#0#Twig" expanded="true" />
+            <element signature="e#2367#2391#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cantines.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CantineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="e#36#59#0#PHP" expanded="true" />
+            <element signature="e#575#595#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Cantine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="29" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="282" column="40" lean-forward="true" selection-start-line="282" selection-start-column="40" selection-end-line="282" selection-end-column="40" />
+        <state relative-caret-position="293">
+          <caret line="275" column="7" selection-start-line="275" selection-start-column="7" selection-end-line="275" selection-end-column="7" />
           <folding>
             <element signature="e#30#43#0#PHP" expanded="true" />
           </folding>

@@ -4,16 +4,16 @@
 
 
     <main class="container">
-        <h1 class="mt-2">Liste des Entrées</h1>
+        <h1 class="mt-2">Liste des Cantines</h1>
         <section class="row">
-            {% for entree in entrees %}
+            {% for cantine in cantines %}
                 <div class="col-4">
                     <div class="card">
-                        <img src="/img/entrees/{{ entree.image }}" class="card-img-top"
-                             alt="Image de {{ entree.name }}">
-                        <div class="card-body">
-                            <h2 class="card-title">{{ entree.name }}</h2>
-                            <p class="card-text">{{ entree.description }}</p>
+                         <div class="card-body">
+                            <h2 class="card-title">{{ cantine.name }}</h2>
+                            <p class="card-text">{{ cantine.adresse }}</p>
+                            <p class="card-text">{{ cantine.ville }}</p>
+
                             <a href="#" class="card-link btn btn-outline-info">Détail</a>
                         </div>
                     </div>
