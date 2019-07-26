@@ -53,6 +53,11 @@ class User implements UserInterface
      */
     private $menuSelectionnes;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $enabled;
+
     public function __construct()
     {
         $this->cantine = new ArrayCollection();
@@ -230,6 +235,18 @@ class User implements UserInterface
     public function __toString(): string
     {
         return $this->email;
+    }
+
+    public function getEnabled(): ?bool
+    {
+        return $this->enabled;
+    }
+
+    public function setEnabled(bool $enabled): self
+    {
+        $this->enabled = $enabled;
+
+        return $this;
     }
 
 
