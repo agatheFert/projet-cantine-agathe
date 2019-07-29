@@ -34,7 +34,9 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-            //->add('cantine')
+            ->add('cantine')
+            ->add('enabled')
+
             /*
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,

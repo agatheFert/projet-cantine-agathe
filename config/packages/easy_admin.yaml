@@ -8,7 +8,7 @@ easy_admin:
             class: App\Entity\User
             list:
                 fields:
-                    - email
+                    - { property: 'email', type: 'email' }
                     - cantine
                     - menu
                     - menuSelectionnes

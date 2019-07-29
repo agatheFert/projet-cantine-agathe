@@ -54,7 +54,7 @@ class User implements UserInterface
     private $menuSelectionnes;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", options={"default":true})
      */
     private $enabled;
 
