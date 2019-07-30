@@ -12,8 +12,9 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  * @ORM\Table(name="app_user")
  * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
+ * * @ORM\HasLifecycleCallbacks()
  */
-class User implements UserInterface
+class  User implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -54,9 +55,14 @@ class User implements UserInterface
     private $menuSelectionnes;
 
     /**
-     * @ORM\Column(type="boolean", options={"default":true})
+     * @ORM\Column(type="boolean", options={"default":false})
      */
-    private $enabled;
+    private $enabled = false;
+
+    /**
+     * @ORM\Column(type="string", length=400, nullable=true)
+     */
+    private $nameCantine;
 
     public function __construct()
     {
@@ -247,6 +253,30 @@ class User implements UserInterface
         $this->enabled = $enabled;
 
         return $this;
+    }
+
+
+
+    public function getNameCantine(): ?string
+    {
+        return $this->nameCantine;
+    }
+
+    /**
+     * @param string $nameCantine
+     */
+    public function setNameCantine(string $nameCantine): self
+    {
+        $this->nameCantine = $this->nameOfCantine();
+        return $this;
+    }
+
+    /**
+     * @return Collection|Cantine[]
+     *  @ORM\PrePersist
+     */
+    public function nameOfCantine() {
+      return $this->cantine->getName();
     }
 
 

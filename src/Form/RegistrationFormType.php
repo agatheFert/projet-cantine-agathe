@@ -35,7 +35,7 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
             ->add('cantine')
-            ->add('enabled')
+            //->add('enabled')
 
             /*
             ->add('agreeTerms', CheckboxType::class, [

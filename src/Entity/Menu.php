@@ -96,7 +96,7 @@ class Menu
     public function getCantine(): ?Cantine
     {
         //dump($this->cantine);
-        //die;-
+        //die;
         return $this->cantine;
     }
 

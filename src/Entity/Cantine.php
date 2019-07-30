@@ -78,8 +78,6 @@ class Cantine
     public function __toString()
 
     {
-
-
         return $this->name;
     }
 
