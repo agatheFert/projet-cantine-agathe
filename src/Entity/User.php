@@ -40,11 +40,6 @@ class  User implements UserInterface
     private $password;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Cantine", inversedBy="users")
-     */
-    private $cantine;
-
-    /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Menu", inversedBy="users")
      */
     private $menu;
@@ -57,16 +52,21 @@ class  User implements UserInterface
     /**
      * @ORM\Column(type="boolean", options={"default":false})
      */
-    private $enabled = false;
+    private $enabled = false;    
 
     /**
-     * @ORM\Column(type="string", length=400, nullable=true)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Cantine", inversedBy="users")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $nameCantine;
+    private $cantine;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Cantine", mappedBy="administrateur", cascade={"persist", "remove"})
+     */
+    private $adminCantine;
 
     public function __construct()
     {
-        $this->cantine = new ArrayCollection();
         $this->menu = new ArrayCollection();
         $this->menuSelectionnes = new ArrayCollection();
     }
@@ -149,31 +149,6 @@ class  User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    /**
-     * @return Collection|Cantine[]
-     */
-    public function getCantine(): Collection
-    {
-        return $this->cantine;
-    }
-
-    public function addCantine(Cantine $cantine): self
-    {
-        if (!$this->cantine->contains($cantine)) {
-            $this->cantine[] = $cantine;
-        }
-
-        return $this;
-    }
-
-    public function removeCantine(Cantine $cantine): self
-    {
-        if ($this->cantine->contains($cantine)) {
-            $this->cantine->removeElement($cantine);
-        }
-
-        return $this;
-    }
 
     /**
      * @return Collection|Menu[]
@@ -255,34 +230,34 @@ class  User implements UserInterface
         return $this;
     }
 
-
-
-    public function getNameCantine(): ?string
+    public function getCantine(): ?Cantine
     {
-        return $this->nameCantine;
+        return $this->cantine;
     }
 
-    /**
-     * @param string $nameCantine
-     */
-    public function setNameCantine(string $nameCantine): self
+    public function setCantine(?Cantine $cantine): self
     {
-        $this->nameCantine = $this->nameOfCantine();
+        $this->cantine = $cantine;
+
         return $this;
     }
 
-    /**
-     * @return Collection|Cantine[]
-     *  @ORM\PrePersist
-     */
-    public function nameOfCantine() {
-      return $this->cantine->getName();
+    public function getAdminCantine(): ?Cantine
+    {
+        return $this->adminCantine;
     }
 
+    public function setAdminCantine(Cantine $adminCantine): self
+    {
+        $this->adminCantine = $adminCantine;
 
+        // set the owning side of the relation if necessary
+        if ($this !== $adminCantine->getAdministrateur()) {
+            $adminCantine->setAdministrateur($this);
+        }
 
-
-
+        return $this;
+    }
 
 
 }

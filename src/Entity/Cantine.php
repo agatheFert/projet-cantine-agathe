@@ -45,10 +45,7 @@ class Cantine
      */
     private $phone;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $gerant;
+
 
 
 
@@ -58,17 +55,25 @@ class Cantine
     private $menus;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="cantine")
+     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="cantine")
      */
     private $users;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\User", inversedBy="adminCantine", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $administrateur;
+
+
 
 
 
     public function __construct()
     {
         $this->menus = new ArrayCollection();
-        $this->users = new ArrayCollection();
         $this->menusCree = new ArrayCollection();
+        $this->users = new ArrayCollection();
     }
 
     /**
@@ -76,9 +81,9 @@ class Cantine
      * Convertir Users en string
      */
     public function __toString()
-
     {
         return $this->name;
+
     }
 
 
@@ -149,17 +154,7 @@ class Cantine
         return $this;
     }
 
-    public function getGerant(): ?string
-    {
-        return $this->gerant;
-    }
 
-    public function setGerant(string $gerant): self
-    {
-        $this->gerant = $gerant;
-
-        return $this;
-    }
 
     /**
      * @return Collection|Menu[]
@@ -204,7 +199,7 @@ class Cantine
     {
         if (!$this->users->contains($user)) {
             $this->users[] = $user;
-            $user->addCantine($this);
+            $user->setCantine($this);
         }
 
         return $this;
@@ -214,18 +209,26 @@ class Cantine
     {
         if ($this->users->contains($user)) {
             $this->users->removeElement($user);
-            $user->removeCantine($this);
+            // set the owning side to null (unless already changed)
+            if ($user->getCantine() === $this) {
+                $user->setCantine(null);
+            }
         }
 
         return $this;
     }
 
+    public function getAdministrateur(): ?User
+    {
+        return $this->administrateur;
+    }
 
+    public function setAdministrateur(User $administrateur): self
+    {
+        $this->administrateur = $administrateur;
 
-
-
-
-
+        return $this;
+    }
 
 
 }

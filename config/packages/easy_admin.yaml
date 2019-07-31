@@ -3,6 +3,16 @@ easy_admin:
         # List the entity class name you want to manage
         Cantine:
             class: App\Entity\Cantine
+            list:
+                fields:
+                    - name
+                    - administrateur
+                    - phone
+                    - adresse
+                    - code_postal
+                    - ville
+                    - menus
+
 
         User:
             class: App\Entity\User
@@ -10,6 +20,7 @@ easy_admin:
                 fields:
                     - { property: 'email', type: 'email' }
                     - cantine
+                    - adminCantine
                     - menu
                     - menuSelectionnes
                     - enabled
