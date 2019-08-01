@@ -7,15 +7,20 @@ easy_admin:
                 fields:
                     - name
                     - administrateur
-                    - phone
+                    - phone                    -
                     - adresse
                     - code_postal
                     - ville
                     - menus
 
+        TestCantine:
+            class: App\Entity\Cantine
+            list:
+                dql_filter: "entity.ville = 'Chantilly'"
 
         User:
             class: App\Entity\User
+            controller : App\Controller\UserAdminController
             list:
                 fields:
                     - { property: 'email', type: 'email' }
