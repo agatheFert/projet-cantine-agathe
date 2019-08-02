@@ -17,7 +17,7 @@ class RegistrationController extends AbstractController
     /**
      * @Route("/register", name="app_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, LoginFormAuthenticator $authenticator): Response
+    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, LoginFormAuthenticator $authenticator, \Swift_Mailer $mailer): Response
     {
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
@@ -25,6 +25,8 @@ class RegistrationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             // encode the plain password
+
+            $registrationFormData = $form->getData();
             $user->setPassword(
                 $passwordEncoder->encodePassword(
                     $user,
@@ -37,6 +39,20 @@ class RegistrationController extends AbstractController
             $entityManager->flush();
 
             // do anything else you need here, like send an email
+            $messageBody = "Email : " . $registrationFormData->getEmail() . "  est inscrit à la Cantine : " . $registrationFormData->getCantine();
+            $message = (new \Swift_Message('Hello Email'))
+
+                    ->setFrom('info@pulsar-informatique.com')
+                    ->setTo('agathefert60@gmail.com')
+                    ->setBody(
+                        $messageBody ,
+                        'text/plain'
+                    );
+
+
+                // Envoi du mail
+              $mailer->send($message);
+
 
             return $guardHandler->authenticateUserAndHandleSuccess(
                 $user,
