@@ -40,10 +40,14 @@ class RegistrationController extends AbstractController
 
             // do anything else you need here, like send an email
             $messageBody = "Email : " . $registrationFormData->getEmail() . "  est inscrit à la Cantine : " . $registrationFormData->getCantine();
+            //$mailDestinataire = $registrationFormData->getCantine()->getAdministrateur();
+            //dump($mailDestinataire);
+            //die;
+
             $message = (new \Swift_Message('Hello Email'))
 
                     ->setFrom('info@pulsar-informatique.com')
-                    ->setTo('agathefert60@gmail.com')
+                    ->setTo($registrationFormData->getCantine()->getAdministrateur()->getEmail())
                     ->setBody(
                         $messageBody ,
                         'text/plain'
@@ -52,6 +56,8 @@ class RegistrationController extends AbstractController
 
                 // Envoi du mail
               $mailer->send($message);
+
+
 
 
             return $guardHandler->authenticateUserAndHandleSuccess(

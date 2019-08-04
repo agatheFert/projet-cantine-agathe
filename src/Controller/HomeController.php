@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -52,7 +53,18 @@ class HomeController extends AbstractController
         // For example, if you added a getFirstName() method, you can use that.
         return new Response('Well hi there, <b>votre Email : </b>'.$user->getEmail(). '<br/> Et <b>Cantine à laquelle vous êtes inscrit : </b>' .$user->getCantine());
     }
+    /**
+     * @Route("/testservice", name="testservice", methods={"GET"})
+     * @return Response
+     *
+     */
 
+    public function list(LoggerInterface $logger):Response
+    {
+       return new Response ($logger->info('Look! I just used a service'));
+
+        // ...
+    }
 
 
 }
